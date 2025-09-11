@@ -141,41 +141,95 @@ graph TD
 
 ### 5. Программа
 
-```java
-import java.io.PrintStream;
+```
 import java.util.Scanner;
 
 public class Main {
-    // Объявляем объект класса Scanner для ввода данных
-    public static Scanner in = new Scanner(System.in);
-    // Объявляем объект класса PrintStream для вывода данных
-    public static PrintStream out = System.out;
+
+    public static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // Считывание двух вещественных чисел x и y из консоли
-        double x = in.nextDouble();
-        double y = in.nextDouble();
 
-        // Определение максимального числа
-        if (x >= y) {
-            // Если x положительное, выводим x, иначе выводим -x,
-            // чтобы на выходе было его абсолютное значение
-            if (x >= 0) {
-                out.println(x);
+        int x = scan.nextInt();
+        int a = scan.nextInt();
+        int b = scan.nextInt();
+        int c = scan.nextInt();
+
+        if (x >= a) {
+            System.out.print("A ");
+            if (x >= b) {
+                System.out.print("B ");
+                if (x >= c) {
+                    System.out.println("C");
+                    if (x >= a + b + c) {
+                        System.out.println("3");
+
+                    } else {
+                        if (x >= a + b) {
+                            System.out.println("2");
+                        } else {
+                            if (x >= a + c) {
+                                System.out.println("2");
+                            } else {
+                                if (x >= c + b) {
+                                    System.out.println("2");
+                                } else {
+                                    System.out.println("1");
+                                }
+                            }
+                        }
+                    }
+
+
+                } else {
+                    System.out.println();
+                    if (x >= b + a) {
+                        System.out.println("2");
+                    } else {
+                        System.out.println("1");
+                    }
+                }
             } else {
-                out.println(-x);
+                if (x >= c) {
+                    System.out.println("C");
+                    if (x >= c + a) {
+                        System.out.println("2");
+                    } else {
+                        System.out.println("1");
+                    }
+                } else {
+                    System.out.println();
+                    System.out.println("1");
+                }
+
+
             }
         } else {
-            // Если x положительное, выводим y, иначе выводим -y,
-            // чтобы на выходе было его абсолютное значение
-            if (y >= 0) {
-                out.println(y);
+            if (x >= b) {
+                System.out.print("B ");
+                if (x >= c) {
+                    System.out.println("C");
+                    if (x >= b + c) {
+                        System.out.println("2");
+                    } else {
+                        System.out.println("1");
+                    }
+                } else {
+                    System.out.println();
+                    System.out.println("1");
+                }
             } else {
-                out.println(-y);
+                if (x >= c) {
+                    System.out.println("C");
+                    System.out.println("1");
+                    } else {
+                        System.out.println();
+                        System.out.println("0");
+                    }
+                }
             }
         }
     }
-}
 ```
 
 ### 6. Анализ правильности решения
