@@ -360,7 +360,7 @@ public class Main {
         A
         1
         ```
-7. Тест на `A < C < X < B` и `C + A <= X `:
+7. Тест на `A < C <= X < B` и `C + A <= X `:
 
     - **Input**:
         ```
@@ -372,7 +372,7 @@ public class Main {
         A C
         2
         ```
-8. Тест на `A < C < X < B` и `C + A > X `:
+8. Тест на `A < C <= X < B` и `C + A > X `:
 
     - **Input**:
         ```
@@ -384,7 +384,7 @@ public class Main {
         A C
         1
         ```
-9. Тест на `A < B < X < C` и `B + A <= X `:
+9. Тест на `A < B <= X < C` и `B + A <= X `:
 
     - **Input**:
         ```
@@ -396,7 +396,7 @@ public class Main {
         A B
         2
         ```
-10. Тест на `A < B < X < B` и `B + A > X `:
+10. Тест на `A < B <= X < B` и `B + A > X `:
 
     - **Input**:
         ```
@@ -408,7 +408,7 @@ public class Main {
         A C
         1
         ```
-11. Тест на `A < C < B < X` и `C + A  + B <= X `:
+11. Тест на `A < C < B <= X` и `C + A  + B <= X `:
 
     - **Input**:
         ```
@@ -420,7 +420,7 @@ public class Main {
         A B C
         3
         ```
-12. Тест на `A < C < B < X` и `C + A  + B > X ` и `B + A <= X `:
+12. Тест на `A < C < B <= X` и `C + A  + B > X ` и `B + A <= X `:
 
     - **Input**:
         ```
@@ -432,7 +432,7 @@ public class Main {
         A B C
         2
         ```
-13. Тест на `A < C < B < X` и `C + A  + B > X ` и `C + A <= X `:
+13. Тест на `A < C < B <= X` и `C + A  + B > X ` и `C + A <= X `:
 
     - **Input**:
         ```
@@ -444,7 +444,7 @@ public class Main {
         A B C
         2
         ```
-14. Тест на `A < C < B < X` и `C + A  + B > X ` и `B + C <= X `:
+14. Тест на `A < C < B <= X` и `C + A  + B > X ` и `B + C <= X `:
 
     - **Input**:
         ```
@@ -456,7 +456,7 @@ public class Main {
         A B C
         2
         ```
-15. Тест на `A < C < B < X` и `C + A  + B > X ` и `B + A > X `и `C + A > X ` и `B + C > X `:
+15. Тест на `A < C < B <= X` и `C + A  + B > X ` и `B + A > X `и `C + A > X ` и `B + C > X `:
 
     - **Input**:
         ```
