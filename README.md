@@ -146,8 +146,7 @@ graph TD
 
 ### 5. Программа
 
-```
-import java.util.Scanner;
+```import java.util.Scanner;
 
 public class Main {
     // Объявляем объект класса Scanner для ввода данных
@@ -177,22 +176,26 @@ public class Main {
                     if (x >= a + b + c) {
                         System.out.println("3");
 
-                    } else {
+                    } 
+                    else {
                         // Определение можно ли поместить два груза в лифт
                         // Если да, выводи 2
                         if (x >= a + b) {
                             System.out.println("2");
-                        } else {
+                        } 
+                        else {
                             // Определение можно ли поместить два груза в лифт
                             // Если да, выводи 2
                             if (x >= a + c) {
                                 System.out.println("2");
-                            } else {
+                            } 
+                            else {
                                 // Определение можно ли поместить два груза в лифт
                                 // Если да, выводи 2
                                 if (x >= c + b) {
                                     System.out.println("2");
-                                } else {
+                                } 
+                                else {
                                     // Если нет выводим 1
                                     System.out.println("1");
                                 }
@@ -201,35 +204,40 @@ public class Main {
                     }
 
 
-                } else {
+                } 
+                else {
                     // Если С больше Х
                     // Перехим на новую строку для поиска максимального
                     System.out.println();
                     // Определение можно ли поместить два груза в лифт
-                    // Если да, выводи 2
+                    // Если да, выводим 2
                     if (x >= b + a) {
                         System.out.println("2");
-                    } else {
+                    } 
+                    else {
                         // Если нет, выводим 1
                         System.out.println("1");
                     }
                 }
-            } else {
+            } 
+            else {
                 // Если В больше Х
                 // Определение можно ли поместить груз С в лифт
-                // Если да, выводи С
+                // Если да, выводим С
                 // Перехим на новую строку для поиска максимального
                 if (x >= c) {
                     System.out.println("C");
                     // Определение можно ли поместить два груза в лифт
-                    // Если да, выводи 2
+                    // Если да, выводим 2
                     if (x >= c + a) {
                         System.out.println("2");
-                    } else {
+                    } 
+                    else {
                         // Если нет, выводим 1
                         System.out.println("1");
                     }
-                } else {
+                } 
+                else {
                     // Если В и С больше Х
                     // Выводим 1
                     System.out.println();
@@ -238,29 +246,33 @@ public class Main {
 
 
             }
-        } else {
+        } 
+        else {
             // Если А больше Х
             // Определение можно ли поместить груз В в лифт
-            // Если да, выводи В
+            // Если да, выводим В
             if (x >= b) {
                 System.out.print("B ");
                 // Определение можно ли поместить груз С в лифт
-                // Если да, выводи С
+                // Если да, выводим С
                 // Перехим на новую строку для поиска максимального
                 if (x >= c) {
                     System.out.println("C");
                     if (x >= b + c) {
                         System.out.println("2");
-                    } else {
+                    } 
+                    else {
                         System.out.println("1");
                     }
-                } else {
+                } 
+                else {
                     // Если А и С больше Х
                     // Выводим 1
                     System.out.println();
                     System.out.println("1");
                 }
-            } else {
+            } 
+            else {
                 // Если А больше Х
                 // Если В больше Х
                 // Определение можно ли поместить груз С в лифт
@@ -268,7 +280,8 @@ public class Main {
                 if (x >= c) {
                     System.out.println("C");
                     System.out.println("1");
-                } else {
+                } 
+                else {
                     // Если А,В и С больше Х
                     // Выводим 0
                     System.out.println();
